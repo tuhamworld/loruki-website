@@ -1,0 +1,181 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+/* Custom Properties (defining variable )*/
+
+
+:root {  /* Root means we can use it anywhere */
+     --primary-color: #047aed;
+}
+
+
+
+
+/* Resetting the page */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*  General Settings */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+text-decoration: none;
+color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    margin: 10px 0px;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0px;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Navbar Styles */
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+}
+
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+}
+
+
+/* Showcase */
+
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0px;
+    
+}
+
+.showcase-form {
+   position: relative;
+   top: 60px;
+   height: 350px;
+   width: 400px;
+   padding: 40px;
+   z-index: 100;
+   justify-self: flex-end;
+}
+
+.showcase .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus{
+    outline: none;
+}
+
+.showcase::before, .showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+
+/* Styles for Stats */
+.stats {
+    padding: 100px;
+}
+
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+}
+
+.stats .grid h3 {
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+/* Cli */
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2
+}
