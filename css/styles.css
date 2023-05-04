@@ -236,6 +236,15 @@ img {
         height: auto;
     }
 
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form {
+        justify-self: center;
+    }
+
 }
 
 /* Mobile and Under */
