@@ -207,3 +207,12 @@ img {
 .languages .card:hover {
     transform: translateY(-15px);
 }
+
+/* Footer */
+.footer .social a {
+    margin: 0 10px;
+}
+
+.footer .social a:hover {
+    opacity: .8;
+}
