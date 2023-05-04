@@ -245,6 +245,11 @@ img {
         justify-self: center;
     }
 
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
 }
 
 /* Mobile and Under */
