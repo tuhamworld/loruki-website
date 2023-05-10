@@ -238,6 +238,19 @@ img {
     grid-column: 1 / span 2;
 }
 
+/* Docs Styles */
+
+.docs-main h3 {
+    margin: 20px;
+}
+
+.docs-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+
+
 
 
 /* Footer */
@@ -249,10 +262,7 @@ img {
     opacity: .8;
 }
 
-
-
-
-
+/* ----------------------------------- */
 
 
 /*  Media Queries Starts from Here */
