@@ -56,6 +56,14 @@ img {
     width: 100%;
 }
 
+/* Code Styles */
+
+code, pre {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
 
 /* Navbar Styles */
 
