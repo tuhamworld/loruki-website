@@ -296,8 +296,10 @@ code, pre {
     .showcase .grid,
     .stats .grid,
     .cli .grid,
-    .cloud .grid {
-        grid-template-columns: 1fr;
+    .cloud .grid,
+    .features-main .grid,
+    .docs-main .grid {
+        grid-template-columns: 2fr;
         grid-template-rows: 1fr;
     }
 
@@ -317,6 +319,18 @@ code, pre {
     .cli .grid > *:first-child {
         grid-column: 1;
         grid-row: 1;
+    }
+
+    .features-head,
+    .features-sub-head,
+    .docs-head {
+        text-align: center;
+    }
+
+    .features-head img,
+    .features-sub-head img,
+    .docs-head img {
+        justify-self: center;
     }
 
 }
