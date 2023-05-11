@@ -129,6 +129,7 @@ code, pre {
    padding: 40px;
    z-index: 100;
    justify-self: flex-end;
+   animation: slideInFromRight 1s ease-in;
 }
 
 .showcase-text {
@@ -170,6 +171,7 @@ code, pre {
 /* Styles for Stats */
 .stats {
     padding: 100px;
+    animation: slideInFromBottom 1s ease-in;
 }
 
 .stats-heading {
@@ -357,10 +359,12 @@ code, pre {
     .showcase-text {
         text-align: center;
         margin-top: 40px;
+        animation: slideInFromTop 1s ease-in;
     }
 
     .showcase-form {
         justify-self: center;
+        animation: slideInFromBottom 1s ease-in;
     }
 
     .cli .grid > *:first-child {
